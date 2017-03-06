@@ -3,7 +3,7 @@ import re
 import urllib.request as request
 import os
   
-def firstReptile(url):  
+def firstReptile(url):
     urlData = request.urlopen(url).read()  
     #3.0现在的参数更改了,现在读取的是bytes-like的,但参数要求是chart-like的,如下解码:  
     data = urlData.decode("utf-8")
